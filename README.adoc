@@ -1,0 +1,28 @@
+= Visualize Dimension Reduction
+Benno Bielmeier <benno.bielmeier@st.oth-regensburg.de>
+:icons: font
+:keywords: template, plotting, TSV, dimension reduction, T-SNE
+:source-language: R
+
+Demo for visualization of mulit-dimensional vectors using dimension reduction.
+
+The input should be provided in tow files:
+
+`data.tsv`::
+	contains multi-dimensional vectors; one vector per line whose elements are seperated by one tab (`\t`) each.
+`label.tsv`::
+	contains labels for vectors; one label per line.
+
+The labels and vectors are mapped line-to-line.
+
+[TIP]
+====
+Further information for the import of data from CSV or TSV files: https://github.com/rstudio/cheatsheets/blob/master/data-import.pdf[Data Import {two-colons} Cheatsheet]
+====
+
+== Setup
+
+. Restore environment +
+[source]
+renv::restore()
+. Define filenames of data an label TSV files.
